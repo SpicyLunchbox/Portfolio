@@ -1,23 +1,31 @@
 import styled from 'styled-components'
-import './App.css';
+
+
+import Header from './components/Header'
+import Bio from './components/Bio'
+import Projects from './components/Projects'
+import Footer from './components/Footer'
+
+export default App;
+
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        Weston Woodard<br/>
-        Full Stack Web Developer
-        <nav>
-          <a href='#'>Bio</a>
-          <a href='#'>Projects</a>
-          <a href='#'>Contact</a>
-        </nav>
-      </header>
-      <section>Welcome, I design fully functional and beautiful websites</section>
-      <section>Here are some of my previous projects</section>
-      <footer>This is the footer</footer>
-    </div>
+    <App1>
+      <Header/>
+      <Bio/>
+      <Projects/>
+      <Footer/>
+    </App1>
   );
 }
 
-export default App;
+const App1 = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: linear-gradient(#528292, #162327);
+  color: white;
+`
