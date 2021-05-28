@@ -1,10 +1,13 @@
 import styled from 'styled-components'
-
+import {Route} from 'react-router-dom'
 
 import Header from './components/Header'
 import Bio from './components/Bio'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
+import Email from './components/Email'
+
+
 
 export default App;
 
@@ -16,6 +19,9 @@ function App() {
       <Bio/>
       <Projects/>
       <Footer/>
+      <Route path = "/email">
+        <Email/>
+      </Route>
     </App1>
   );
 }

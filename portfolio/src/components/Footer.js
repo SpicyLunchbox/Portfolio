@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <div className="Footer">
-            This is the footer
+            <button>Contact me</button>
         </div>
     )
 }
